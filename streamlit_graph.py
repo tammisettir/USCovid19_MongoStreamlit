@@ -3,6 +3,10 @@ import streamlit as st
 import altair as alt
 import pandas as pd
 import mongodb_ops as db_ops  # Importing the database operations script
+from dotenv import load_dotenv
+
+#load environment variables from .env file
+load_dotenv()
 
 # MongoDB Atlas credentials and connection details
 username = os.environ.get('DB_USERNAME')
